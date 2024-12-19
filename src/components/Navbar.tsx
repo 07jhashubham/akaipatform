@@ -1,8 +1,13 @@
+'use client'
 import React, { useState } from 'react';
-import { Search, Menu, X, Link } from 'lucide-react';
+import { Search, Menu, X } from 'lucide-react';
+import Link from 'next/link';
+import { usePathname } from 'next/navigation';
+import clsx from 'clsx';
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const pathname = usePathname();
 
   return (
     <div className="relative">
@@ -21,8 +26,8 @@ const Navbar = () => {
 
         {/* Center and Right: Links and Search */}
         <div className="hidden lg:flex mr-10 items-center gap-14">
-          <Link href='/home' className="font-helvetica-medium">Home</Link>
-          <Link href='/label' className="font-helvetica-medium">Label Data</Link>
+          <Link href='/' className={clsx('font-helvetica-medium', pathname === "/" && 'underline')}>Home</Link>
+          <Link href='/label-data/input' className={clsx('font-helvetica-medium', pathname.startsWith("/label-data") && 'underline')}>Label Data</Link>
           <div className="relative">
             <input
               type="text"
@@ -66,15 +71,15 @@ const Navbar = () => {
             />
           </div>
           <Link
-            to="/"
-            className="text-lg font-medium text-black hover:text-red-600"
+            href="#"
+            className="text-lg font-helvetica-medium font-medium text-black hover:text-red-600"
             onClick={() => setIsMenuOpen(false)}
           >
             Home
           </Link>
           <Link
-            to="/label-data"
-            className="text-lg font-medium text-black hover:text-red-600"
+            href="#"
+            className="text-lg font-helvetica-medium font-medium text-black hover:text-red-600"
             onClick={() => setIsMenuOpen(false)}
           >
             Label Data

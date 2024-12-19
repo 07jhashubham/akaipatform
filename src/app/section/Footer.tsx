@@ -12,10 +12,10 @@ const Footer = () => {
                     <img src="/footer-x.png" className='lg:w-20 w-24 mt-5 right-10 lg:right-20 absolute lg:static lg:ml-[47rem]' alt="" />
                 </div>
             </div>
-            <div className='flex items-center mt-14 px-4 gap-8 lg:gap-14 lg:ml-32'>
-                <img src="/socials/X.svg" alt="X logo" />
-                <img src="/socials/Telegram.svg" alt="Telegram logo" />
-                <img src="/socials/Discord.svg" alt="Discord logo" />
+            <div className='flex items-center mt-20 lg:mt-14 px-4 gap-8 lg:gap-14 lg:ml-32'>
+                <img className='' src="/socials/X.svg" alt="X logo" />
+                <img className='' src="/socials/Telegram.svg" alt="Telegram logo" />
+                <img className='' src="/socials/Discord.svg" alt="Discord logo" />
             </div>
             <div className='flex flex-col lg:flex-row items-center justify-center py-4 lg:py-2 gap-6 bg-gray-300 lg:gap-10 mt-20'>
                 <div className='font-helvetica-medium text-xl lg:text-base'>About Us</div>
@@ -23,7 +23,7 @@ const Footer = () => {
                 <div className='font-helvetica-medium text-xl lg:text-base'>Privacy Policy</div>
                 <div className='font-helvetica-medium text-xl lg:text-base'>Social Media</div>
             </div>
-            <p className='text-center font-helvetica-medium lg:py-1 py-3 text-xl lg:text-base'>&copy; 2024 Akai Space. All Rights Reserved</p>
+            <p className='text-center font-helvetica-medium lg:py-1 py-3 text-base lg:text-base'>&copy; 2024 Akai Space. All Rights Reserved</p>
         </div>
     )
 }

@@ -1,11 +1,10 @@
-import Image from "next/image";
 import Hero from "./section/Hero";
 import Why from "./section/Why";
-import { Component } from "lucide-react";
 import Testimonials from "./section/Testimonials";
 import Applications from "./section/Applications";
 import Form from "./section/Form";
 import Footer from "./section/Footer";
+import Component from "./section/Component";
 
 export default function Home() {
   return (
@@ -16,7 +15,6 @@ export default function Home() {
       <Testimonials />
       <Applications />
       <Form />
-      <Footer />
     </div>
   );
 }
