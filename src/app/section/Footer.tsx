@@ -1,8 +1,11 @@
+'use client'
+import { usePathname } from 'next/navigation'
 import React from 'react'
 
 const Footer = () => {
+    const pathname=usePathname();
     return (
-        <div className='border-t-[3rem]  border-t-prime w-full'>
+        <div className={`border-t-[3rem]  border-t-prime w-full ${pathname.startsWith('/auth') && 'hidden'}`}>
             <div className='lg:flex justify-around lg:px-4 mt-16 relative'>
                 <img src="/footer-dot.png" alt="" className='lg:w-[15%] hidden lg:block lg:h-[10%]' />
                 <img src="/res-footer-dot.png" className='lg:hidden ml-20 absolute -left-12 -top-16' alt="" />

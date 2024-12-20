@@ -10,7 +10,7 @@ const Navbar = () => {
   const pathname = usePathname();
 
   return (
-    <div className="relative">
+    <div className={`relative ${pathname.startsWith('/auth') && 'hidden'}`}>
       {/* Main Navbar */}
       <div className="flex items-center lg:justify-between  px-6 gap-16 w-full h-20 shadow-md bg-white">
         {/* Left: Menu Button for Small Screens */}
