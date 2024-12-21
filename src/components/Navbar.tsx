@@ -71,15 +71,15 @@ const Navbar = () => {
             />
           </div>
           <Link
-            href="#"
-            className="text-lg font-helvetica-medium font-medium text-black hover:text-red-600"
+            href="/"
+            className={clsx('text-lg font-helvetica-medium', pathname==="/" && 'underline')}
             onClick={() => setIsMenuOpen(false)}
           >
             Home
           </Link>
           <Link
-            href="#"
-            className="text-lg font-helvetica-medium font-medium text-black hover:text-red-600"
+            href="/label-data/input"
+            className={clsx('text-lg font-helvetica-medium', pathname.startsWith("/label-data") && 'underline')}
             onClick={() => setIsMenuOpen(false)}
           >
             Label Data

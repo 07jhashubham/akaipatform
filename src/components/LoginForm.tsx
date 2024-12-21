@@ -22,7 +22,7 @@ const LoginForm: FC<LoginFormProps> = ({ }) => {
             <p className='text-prime font-rexlia text-xl' >Log In</p>
             <input onChange={handleChange} value={formData.email} name='email' type="text" className='px-4 py-2 w-full bg-inputBg border border-black focus:border-transparent focus:ring-2 focus:ring-inset focus:ring-prime' placeholder='Email ID or Username' />
             <div className='w-full flex flex-col items-end'>
-                <input onChange={handleChange} value={formData.password} name='password' type="text" className='px-4 py-2 mb-2 w-full bg-inputBg border border-black focus:border-transparent focus:ring-2 focus:ring-inset focus:ring-prime' placeholder='Password' />
+                <input onChange={handleChange} value={formData.password} name='password' type="password" className='px-4 py-2 mb-2 w-full bg-inputBg border border-black focus:border-transparent focus:ring-2 focus:ring-inset focus:ring-prime' placeholder='Password' />
                 <Link href='#' className='text-blue-500 underline hover:opacity-85'>
                     <span className=''>Forgot Password?</span>
                 </Link>

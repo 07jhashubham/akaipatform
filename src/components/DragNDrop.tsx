@@ -53,7 +53,7 @@ const DragNDrop: FC<DragNDropProps> = ({ onFilesSelected, clearFiles }) => {
                     hidden
                     id="browse"
                     onChange={handleFileChange}
-                    accept=".pdf,.docx,.pptx,.txt,.xlsx"
+                    accept=".pdf,.docx,.pptx,.txt,.xlsx,.csv"
                     multiple
                 />
                 {files.length > 0 ? (

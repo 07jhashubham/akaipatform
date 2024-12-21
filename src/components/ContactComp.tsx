@@ -15,7 +15,7 @@ const ContactComp: FC<ContactCompProps> = ({ selectedCode, setNumber, setSelecte
                 Enter Mobile Number
             </p>
             <div className='flex items-center h-10 justify-center w-full mx-auto'>
-                <CustomSelect value={selectedCode} onValueChange={(value) => setSelectedCode(value)} >
+                <CustomSelect value={selectedCode} defaultValue='+91' onValueChange={(value) => setSelectedCode(value)} >
                     <CustomSelectTrigger className='w-20 h-10 py-4'>
                         <CustomSelectValue defaultChecked defaultValue={"+91"} />
                     </CustomSelectTrigger>
